@@ -1,10 +1,10 @@
 version: 0.6.0
 rules:
-  - name: "Teste Visual Elementos"
+  - name: "Teste Visual IDs Reais"
     mapping: "id"
     elementIds:
-      -  "ge-svg-4U28NL4NUqqlgwymBZER"
-      - "svg-image-L8-0zsxcodcOVJzrUMW7"
+      - "ELFR15_086.elian.local"
+      - "ART6xVmGZOSZGalsON6v-11"
     states:
       - color: "yellow"
         pattern: ".*"
