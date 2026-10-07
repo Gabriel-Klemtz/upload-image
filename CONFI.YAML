@@ -1,17 +1,10 @@
 version: 0.6.0
 rules:
-  - name: "Status AP e Switch"
+  - name: "Mapeamento AP e Switch"
     mapping: "id"
     elementIds:
       - "ge-svg-4U28NL4NuqLgwymBZER"
       - "svg-image-L8-0zsxcodcOVJzrUMW7"
-    expressions:
-      - key: "A"
-        value: "icmpping"
-      - key: "B"
-        value: "icmpping"
-    colors:
-      - color: "green"
-        pattern: "1"
-      - color: "red"
-        pattern: "0"
+    data:
+      - refId: "A"
+      - refId: "B"
