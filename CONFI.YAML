@@ -2,14 +2,17 @@
 cellIdPreamble: ""
 
 cells:
-  # Usa aqui o ID exato que tens no campo ID do Draw.io (ou o ID técnico do SVG se persistir)
-  ELF-R015-SW015-Administrativo.elian.local:
+  ge-svg-joCQee2j3RK0R8PNj5xj:
     dataRef: "ICMP ping"
-    label:
+    fillColor:
       dataRef: "ICMP ping"
-      separator: "colon"
-      units: "none"
-      decimalPoints: 0
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
+
+  svg-image-F9IJ-LwFXCdozS413Fii:
+    dataRef: "ICMP ping"
     fillColor:
       dataRef: "ICMP ping"
       gradientMode: "hue"
