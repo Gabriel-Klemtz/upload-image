@@ -1,0 +1,24 @@
+rules:
+  - name: "AP - Status"
+    mapping: "id"
+    elementIds:
+      - "ge-svg-4U28NL4NuqLgwymBZER"
+    targets:
+      - refId: "A"
+    states:
+      - color: "green"
+        pattern: "1"
+      - color: "red"
+        pattern: "0"
+
+  - name: "Switch - Status"
+    mapping: "id"
+    elementIds:
+      - "svg-image-L8-0zsxcodcOVJzrUMW7"
+    targets:
+      - refId: "B"
+    states:
+      - color: "green"
+        pattern: "1"
+      - color: "red"
+        pattern: "0"
