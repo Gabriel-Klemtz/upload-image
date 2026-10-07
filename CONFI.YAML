@@ -1,18 +1,32 @@
 ---
-version: 0.6.0
-rules:
-  - name: "Status AP e Switch"
-    mapping: "id"
-    elementIds:
-      - "ELFR15_086.elian.local"
-      - "ART6xVmGZOSZGalsON6v-11"
-    expressions:
-      - key: "A"
-        value: "icmpping"
-      - key: "B"
-        value: "icmpping"
-    colors:
-      - color: "green"
-        pattern: "1"
-      - color: "red"
-        pattern: "0"
+# Configuração básica do painel Flow
+
+# Define o prefixo dos IDs das células que vêm do Draw.io (mantemos 'cell-' conforme o plugin exporta)
+cellIdPreamble: "cell-"
+
+# Configuração das células (Substitui 'inbox_depth' pelo ID exato da tua célula no Draw.io)
+cells: 
+  ELF-R015-SW015-Administrativo.elian.local:
+    # Nome exato da série temporal ou métrica que vem da tua query do Zabbix
+    dataRef: "ICMP ping"
+
+    # Configuração do texto que aparece no elemento
+    label:
+      dataRef: "ICMP ping"
+      separator: "colon"
+      units: "none"
+      decimalPoints: 0
+
+    # Configuração da cor de fundo baseada em limiares (ex: Verde se OK, Vermelho se cair)
+    fillColor:
+      dataRef: "ICMP ping"
+      gradientMode: "hue"
+      thresholds:
+        - {color: "green", level: 0}
+        - {color: "red", level: 1}
+
+    # Link opcional ao clicar no elemento (pode apontar para o próprio Zabbix ou dashboard)
+    link:
+      url: "https://grafana.com/"
+      params: "time"
+      sameTab: true
