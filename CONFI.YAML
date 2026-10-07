@@ -1,23 +1,16 @@
+version: 0.6.0
 rules:
-  - name: "AP - Status"
+  - name: "Status AP e Switch"
     mapping: "id"
     elementIds:
       - "ge-svg-4U28NL4NuqLgwymBZER"
-    targets:
-      - refId: "A"
-    states:
-      - color: "green"
-        pattern: "1"
-      - color: "red"
-        pattern: "0"
-
-  - name: "Switch - Status"
-    mapping: "id"
-    elementIds:
       - "svg-image-L8-0zsxcodcOVJzrUMW7"
-    targets:
-      - refId: "B"
-    states:
+    expressions:
+      - key: "A"
+        value: "icmpping"
+      - key: "B"
+        value: "icmpping"
+    colors:
       - color: "green"
         pattern: "1"
       - color: "red"
