@@ -1,10 +1,18 @@
+---
 version: 0.6.0
 rules:
-  - name: "Teste Visual IDs Reais"
+  - name: "Status AP e Switch"
     mapping: "id"
     elementIds:
       - "ELFR15_086.elian.local"
       - "ART6xVmGZOSZGalsON6v-11"
-    states:
-      - color: "yellow"
-        pattern: ".*"
+    expressions:
+      - key: "A"
+        value: "icmpping"
+      - key: "B"
+        value: "icmpping"
+    colors:
+      - color: "green"
+        pattern: "1"
+      - color: "red"
+        pattern: "0"
