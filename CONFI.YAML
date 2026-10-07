@@ -2,20 +2,15 @@
 cellIdPreamble: ""
 
 cells:
-  ge-svg-joCQee2j3RK0R8PNj5xj:
+  svg-image-F9IJ-lWfXCdozS413Fii:
     dataRef: "ICMP ping"
     fillColor:
       dataRef: "ICMP ping"
       gradientMode: "hue"
       thresholds:
-        - {color: "green", level: 0}
-        - {color: "red", level: 1}
+        - {color: "red", level: 0}
+        - {color: "green", level: 1}
 
-  svg-image-F9IJ-LwFXCdozS413Fii:
-    dataRef: "ICMP ping"
-    fillColor:
-      dataRef: "ICMP ping"
-      gradientMode: "hue"
-      thresholds:
-        - {color: "green", level: 0}
-        - {color: "red", level: 1}
+        new Set([
+    
+])
