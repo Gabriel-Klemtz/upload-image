@@ -10,7 +10,3 @@ cells:
       thresholds:
         - {color: "red", level: 0}
         - {color: "green", level: 1}
-
-        new Set([
-    
-])
