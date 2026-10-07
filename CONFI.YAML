@@ -1,10 +1,27 @@
 version: 0.6.0
 rules:
-  - name: "Mapeamento AP e Switch"
+  - name: "Mapeamento AP"
     mapping: "id"
     elementIds:
       - "ge-svg-4U28NL4NuqLgwymBZER"
+    data:
+      - name: "ICMP ping"
+        metric: "ELFR15_086.elian.local"
+    states:
+      - color: "green"
+        pattern: "1"
+      - color: "red"
+        pattern: "0"
+
+  - name: "Mapeamento Switch"
+    mapping: "id"
+    elementIds:
       - "svg-image-L8-0zsxcodcOVJzrUMW7"
     data:
-      - refId: "A"
-      - refId: "B"
+      - name: "ICMP ping"
+        metric: "ELF-R015-SW015-Admi"
+    states:
+      - color: "green"
+        pattern: "1"
+      - color: "red"
+        pattern: "0"
