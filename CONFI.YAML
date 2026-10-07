@@ -3,7 +3,7 @@ rules:
   - name: "Teste Visual Elementos"
     mapping: "id"
     elementIds:
-      - "ge-svg-4U28NL4NuqLgwymBZER"
+      -  "ge-svg-4U28NL4NUqqlgwymBZER"
       - "svg-image-L8-0zsxcodcOVJzrUMW7"
     states:
       - color: "yellow"
